@@ -1,0 +1,22 @@
+﻿@model DotNetCoreFirebaseRealtimeDatabase.Models.Employee
+@{
+    ViewData["Title"] = "Yeni İş Oluştur";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form class="form-group" method="post">
+
+
+
+    <div class="form-group">
+        <label class="control-label">İş Adı</label>
+        <input asp-for="name" class="form-control" />
+        <span asp-validation-for="name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Termin Süresi</label>
+        <input asp-for="deadline" class="form-control" />
+        <span asp-validation-for="deadline" class="text-danger"></span>
+    </div>
+    <button class="btn btn-primary">Yeni İş Oluştur</button>
+</form>
+

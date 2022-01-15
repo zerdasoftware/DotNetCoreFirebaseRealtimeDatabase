@@ -1,0 +1,19 @@
+﻿@model DotNetCoreFirebaseRealtimeDatabase.Models.Employee
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>İş Adı</th>
+        <th>Termin Süresi</th>
+    </tr>
+       <tr>
+        <td>@Html.DisplayFor(model => model.name)</td>
+        <td>@Html.DisplayFor(model => model.deadline)</td>
+    </tr>
+</table>
+
